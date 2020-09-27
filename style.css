@@ -1,0 +1,201 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #6A6A6A;
+}
+
+.dialog{
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.38);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.38);
+}
+
+.dialog-header{
+    padding: 19px 15px 19px 15px;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog-header h3{
+    margin: 0;
+    font-size: 22px;
+    color: black;
+}
+
+.dialog-header-btn{
+    padding-top: 10px;
+}
+
+.dialog-section{
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px ;
+}
+
+.dialog-subheader{
+    border-bottom: 1px solid #DFDFDF;
+}
+
+/* style for radio checks input */
+input[type="radio" i] {
+    margin: 3px 3px 0px 0px;
+}
+
+.dialog-newrange label{
+    font-size: 12px;
+    color: #9C9C9C;
+    margin-top: -5px;
+}
+
+.dialog-newrange__radio{
+    margin-bottom: 10px;
+}
+
+/* style for date and time input */
+input[type=text], select {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #D7D7D7;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+/* style the placeholder text */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #B7B7B7;
+  font-style: italic;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: #B7B7B7;
+  font-style: italic;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #B7B7B7;
+  font-style: italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #B7B7B7;
+  font-style: italic;
+}
+
+.calendarIcon{
+    position: absolute;
+    width: 20px;
+    margin-top: 17px;
+    margin-left: -25px;
+}
+
+.dialog-dateRange{
+    padding-bottom: 100px;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.dialog-dateRange p{
+    margin-bottom: 5px;
+    color: #9C9C9C;
+    font-size: 12px;
+}
+
+.dialog-dateRange__buttons{
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialog-dateRange__endDate{
+    position: absolute;
+    width: 260px;
+    display: none;
+}
+
+.dialog-dateRange__endDate input{
+    margin-top: 0px;
+}
+
+.dialog-dateRange__endDate .calendarIcon{
+    margin-top: 9px;
+    margin-left: -25px;
+}
+
+
+
+.button{
+  background-color: #F8F8F8;
+  border: 1px solid #D2D2D2;
+  padding: 12px 0px;
+  width: 125px;
+  color: #6A6A6A;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-box-shadow: 0px 4px 0px 0px rgba(204,204,204,0.99);
+  -moz-box-shadow: 0px 4px 0px 0px rgba(204,204,204,0.99);
+  box-shadow: 0px 4px 0px 0px rgba(204,204,204,0.99);
+}
+
+.button-wide{
+  width: 100%;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #E9E9E9;
+  background-color: #FBFCFC;
+  color: #BEBEBE;
+  -webkit-box-shadow: 0px 4px 0px 0px rgba(233,233,233,1);
+  -moz-box-shadow: 0px 4px 0px 0px rgba(233,233,233,1);
+  box-shadow: 0px 4px 0px 0px rgba(233,233,233,1);
+}
+
+button:focus{
+    background-color: #E3F4FF;
+    color: #4E7DE1;
+    text-decoration: underline;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(233,233,233,1);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(233,233,233,1);
+    box-shadow: 0px 0px 0px 0px rgba(233,233,233,1);
+}
+
+.button-wide:focus{
+    background-color: #E3F4FF;
+    border: 2px solid #090A0B !important;
+    color: #4E7DE1;
+    text-decoration: underline;
+    outline: none !important;
+}
+
+.dialog-update{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 15px;
+}
+
+.button-update{
+  background-color: #3265DB; /* Green */
+  border: none;
+  padding: 12px 0px;
+  margin-right: 5px;
+  width: 80px;
+  color: #ffffff;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-GB">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Capita Challange</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+    <div class="dialog">
+        <!-- Dialog Header -->
+        <div class="dialog-header">
+            <div>
+                <h3>Change date range</h3>
+            </div>
+            <div class="dialog-header-btn">
+                <img src="assets/close.png" alt="close">
+            </div>
+        </div>
+        <!-- Dialog Sub Header -->
+        <div class="dialog-section dialog-subheader">
+            <p>Current range</p>
+            <p>01/01/2020 to 14/02/2020</p>
+        </div>
+        <!-- Dialog New Range Section -->
+        <div class="dialog-section dialog-newrange">
+            <p>New range</p>
+            <div class="dialog-newrange__radio">
+                <input type="radio" name="startingToday" checked="checked">
+                <label for="startingToday">Starting Today</label>
+            </div>
+            <div class="dialog-newrange__radio">
+                <input type="radio" name="startingToday">
+                <label for="startingToday">Custom start date</label>
+            </div>
+            <div>
+                <input type="text" placeholder="dd/mm/yyy" name="customStartDate">
+                <img class="calendarIcon" src="assets/date.png" alt="calendarIcon">
+            </div>
+        </div>
+        <!-- Dialog New Range Buttons Section -->
+        <div class="dialog-section dialog-dateRange">
+            <p>Set a date range</p>
+            <div class="dialog-dateRange__buttons">
+                <button disabled class="button">+ 1 week</button>
+                <button disabled class="button">+ 2 weeks</button>
+            </div>
+            <div class="dialog-dateRange__buttons">
+                <button class="button">+ 3 week</button>
+                <button autofocus class="button">+ 4 weeks</button>
+            </div>
+            <div class="dialog-dateRange__buttons">
+                <button class="button">+ 2 months</button>
+                <button class="button">+ 3 months</button>
+            </div>
+            <div class="dialog-dateRange__buttons">
+                <button class="button button-wide" onclick="displayInput()">Pick a specific end date</button>
+            </div>
+            <!-- Dialog New Range End Date Section -->
+            <div class="dialog-dateRange__endDate" id="endDateInput">
+                <p>End date</p>
+                <input type="text" placeholder="dd/mm/yyy" name="customStartDate" id="customStartDate">
+                <img class="calendarIcon" src="assets/date.png" alt="calendarIcon">
+            </div>
+        </div>
+        <!-- Dialog Footer-->
+        <div class="dialog-section dialog-update">
+            <button class="button-update">Update</button>
+        </div>
+
+    </div>
+
+    <script>
+        // function to show the end date input when the "pick a specific end date" button is pressed
+        function displayInput() {
+            var endDateInput = document.getElementById('endDateInput');
+            if (endDateInput.style.display === "") {
+                endDateInput.style.display = "block";
+            } else if (endDateInput.style.display === "none") {
+                endDateInput.style.display = "block";
+            } else {
+                endDateInput.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
